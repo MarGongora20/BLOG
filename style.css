@@ -414,22 +414,280 @@ button{
     line-height: 1.4;
     margin-top: 5px;
 }
-.introduccion{
+
+/* =========================
+   INTRODUCCION (HERO SECTION)
+========================= */
+
+.introduccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    gap: 50px;
+    padding: 90px 60px;
+    background: linear-gradient(135deg, #f9f9ff, #eef0ff);
 }
 
-.texto{
-    width: 50%;
+/* TEXTO */
+.introduccion .texto {
+    width: 55%;
 }
 
-.imagen{
+.introduccion .texto h2 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 42px;
+    color: #3333cc;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+/* PARRAFOS */
+.introduccion .texto p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* IMAGEN */
+.introduccion .imagen {
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
-.imagen img{
+.introduccion .imagen img {
     width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
 
+/* HOVER IMAGEN */
+.introduccion .imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .introduccion {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .introduccion .texto,
+    .introduccion .imagen {
+        width: 100%;
+    }
+
+    .introduccion .texto h2 {
+        font-size: 30px;
+    }
+}
+
+/* =========================
+   TOP 5 SECTION (BLOG STYLE)
+========================= */
+
+.top5 {
+    padding: 80px 60px;
+    background: #f9f9ff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* TITULO */
+.top5 h2 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 38px;
+    color: #3333cc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GRID DE ARTICULOS */
+.top5 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* CADA CARD */
+.top5 article {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* HOVER EFECTO */
+.top5 article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* TITULOS DE CADA ITEM */
+.top5 article h3 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 22px;
+    color: #2412a8;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.top5 article p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .top5 {
+        padding: 40px 20px;
+    }
+
+    .top5 h2 {
+        font-size: 28px;
+    }
+
+    .top5 article {
+        padding: 18px;
+    }
+}
+
+/* =========================
+   CONTACTO HEADER
+========================= */
+
+.encabezado1 {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: linear-gradient(135deg, #f9f9ff, #eef0ff);
+}
+
+#encabezado {
+    font-family: "Lilita One", sans-serif;
+    font-size: 42px;
+    color: #3333cc;
+    margin-bottom: 15px;
+}
+
+.parrafo {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTENEDOR DE CARDS
+========================= */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+
+/* =========================
+   CARDS CONTACTO
+========================= */
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ICONOS */
+.card i {
+    font-size: 35px;
+    color: #3333cc;
+    margin-bottom: 15px;
+}
+
+/* TITULO CARD */
+.titulito {
+    font-family: "Lilita One", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2412a8;
+}
+
+/* TEXTO CARD */
+.card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* =========================
+   UBICACION MAPA
+========================= */
+
+.ubicacion {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+    background: #f9f9ff;
+}
+
+.ubicacion .parrafo {
+    margin-bottom: 20px;
+}
+
+/* MAPA */
+.ubicacion iframe {
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    #encabezado {
+        font-size: 30px;
+    }
+
+    .contenedor {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .ubicacion iframe {
+        height: 300px;
+    }
 }
