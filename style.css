@@ -1,0 +1,18 @@
+.introduccion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.texto{
+    width: 50%;
+}
+
+.imagen{
+    width: 40%;
+}
+
+.imagen img{
+    width: 100%;
+}
