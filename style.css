@@ -413,7 +413,7 @@ button{
     max-width: 220px;
     line-height: 1.4;
     margin-top: 5px;
-=======
+}
 .introduccion{
     display: flex;
     justify-content: space-between;
@@ -431,5 +431,5 @@ button{
 
 .imagen img{
     width: 100%;
->>>>>>> fabian
+
 }
